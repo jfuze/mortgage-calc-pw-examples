@@ -1,3 +1,7 @@
+## An incredibly important caveat
+
+These tests and the attached document are authored based on the presumption that the interest rate field (and form more broadly) is existing, tested, and properly integrated with the mortgage calculations being done. I would never make that assumption sight-unseen in a real product and am doing so here purely to be respectful of the time constraints set forth in the assignment.
+
 ## Setup & usage
 
 ### Prerequisites
