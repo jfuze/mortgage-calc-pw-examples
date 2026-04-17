@@ -94,6 +94,8 @@ test.describe("Purchase form: ", { tag: ["@MORT-247", "@purchase"] }, () => {
 		async ({ page }) => {
 			await calc.selectState(page).selectOption("Florida");
 			await expect(calc.spanLoadingRate(page)).toBeVisible();
+			await expect(calc.spanPrefilledRate(page)).toBeVisible();
+			await expect(calc.spanLoadingRate(page)).toBeHidden();
 		},
 	);
 
