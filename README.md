@@ -4,8 +4,7 @@
 
 - **Node.js 18+** - download from [nodejs.org](https://nodejs.org)
 - **pnpm 10+**
-- copy `.env.example` to `.env`
-  - The value for `VERCEL_AUTOMATION_BYPASS_SECRET` is not uploaded to this project to avoid storing it in plain text. You may need to retrieve the value from the assignment or an internal team member.
+
 
 To check if you already have `node` and `pnpm`, run this in your terminal:
 
@@ -26,6 +25,8 @@ npm install -g pnpm
 pnpm install
 pnpm exec playwright install
 ```
+
+You _may need to_ copy `.env.example` to `.env` and provide the value for `VERCEL_AUTOMATION_BYPASS_SECRET`. The value is not uploaded to this project to avoid storing it in plain text. You will need to retrieve the value from the assignment or an internal team member. **I did not encounter issues with the value missing**
 
 ### Use one of the following to run the tests
 
