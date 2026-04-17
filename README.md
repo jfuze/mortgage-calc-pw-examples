@@ -4,6 +4,7 @@
 
 - **Node.js 18+** - download from [nodejs.org](https://nodejs.org)
 - **pnpm 10+**
+- `VERCEL_AUTOMATION_BYPASS_SECRET`. The value is not uploaded to this project to avoid storing it in plain text. You may need to retrieve the value from the assignment or an internal team member.
 
 To check if you already have them, run this in your terminal:
 
@@ -41,10 +42,15 @@ This project is using the `line` reporter by default which will print results to
 pnpm exec playwright show-report
 ```
 
+## Automated test coverage
+
+This project currently covers more than the google doc test plan. The only exception is the interest rate input bounds testing (0.010% to 15%) which is not currently automated.
+
 ## Considerations
 
-I would write many of these tests at a lower level than Playwright. I've created them here because it was fast to demonstrate how I'd approach doing so upon request.
+I would write many of these tests at a lower level than Playwright. I've created them here because it was fast to demonstrate how I'd approach doing so upon request and the assignment specified "black box" testing. Realistically, I'd check/coordinate with dev to see what's covered already at an integration/unit level.
 
+I did not go far into page-object, stuck everything in a single test file, didn't use fixtures, auth, email/sms, etc. A real framework would likely require considerations on all of these fronts. I didn't display much of that here to respect the time constraints.
 ## Test plan
 
 Available in [google docs](https://docs.google.com/document/d/1vKAB6cpOf6F_vwSL8qV2jcF2k5u8NQFGMfAmFzkm02Y/edit?usp=sharing)
