@@ -44,10 +44,6 @@ This project is using the `line` reporter by default which will print results to
 pnpm exec playwright show-report
 ```
 
-## Automated test coverage
-
-This project currently covers more than the google doc test plan. The only exception is the interest rate input bounds testing (0.010% to 15%) which is not currently automated.
-
 ## Tests will fail
 
 4 tests will fail due to the app deviating from the acceptance criteria. These are:
